@@ -1,0 +1,48 @@
+.--g-flex {
+  display: flex;
+  &-center {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &-start {
+    display: flex;
+    align-content: center;
+    justify-content: start;
+  }
+  &-sp-btwn {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+  }
+  &-column-center {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+  }
+}
+.--positioning {
+  margin: 0 auto 0;
+}
+.container {
+  padding: 0px 15px;
+}
+.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+  visibility: hidden;
+}
+/* СКРИТІ ЕЛЕМЕНТИ */
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}

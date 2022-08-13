@@ -1,1 +1,212 @@
-/*# sourceMappingURL=index.css.map */
+@charset "UTF-8";
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+/* при навігації клавішею TAB забирав чорний аутлайн  */
+*:focus,
+*:focus-within {
+  outline: transparent;
+}
+
+body {
+  background-color: #ffffff;
+  font-family: "Roboto", sans-serif;
+  color: var(--color-text-primary);
+  font-size: 14px;
+  letter-spacing: 0.03em;
+  margin: 0px;
+  -webkit-tap-highlight-color: transparent;
+  user-select: none;
+}
+
+/* -------------------------- ГЛОБАЛЬНІ КЛАСИ -------------------------- */
+.section {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+@media screen and (min-width: 1200px) {
+  .section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
+.section.--no-padding {
+  padding: 0px;
+}
+.section.--no-top-padding {
+  padding-top: 0px;
+}
+.section.--no-bottom-padding {
+  padding-bottom: 0px;
+}
+@media screen and (max-width: 1199px) {
+  .section.--only-desktop {
+    display: none;
+  }
+}
+.section.--header {
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  white-space: nowrap;
+  padding-top: 0;
+  padding-bottom: 0;
+  background-color: #ffffff;
+  border-bottom: 1px solid #ececec;
+}
+.section.--footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: #2f303a;
+}
+.section-tittle {
+  font-weight: var(--tittle-wght-bold);
+  font-size: 36px;
+  line-height: 1.7;
+  text-align: center;
+  color: var(--tittle-clr-bold);
+  margin-top: 0px;
+  margin-bottom: 50px;
+}
+
+/* -------------------------- НОРМАЛІЗАЦІЯ -------------------------- */
+/* ЗАГОЛОВКИ */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 0;
+}
+
+/* ПАРАГРАФИ */
+p {
+  margin-top: 0;
+}
+
+/* СПИСКИ */
+ul {
+  list-style: none;
+  padding-inline-start: 0px;
+  margin: 0px;
+}
+
+/* ПОСИЛАННЯ */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* адресні дані */
+address {
+  font-style: normal;
+}
+
+/* кнопки */
+button {
+  cursor: pointer;
+}
+
+/* зображення */
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.--g-flex {
+  display: flex;
+}
+.--g-flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.--g-flex-start {
+  display: flex;
+  align-content: center;
+  justify-content: start;
+}
+.--g-flex-sp-btwn {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+.--g-flex-column-center {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+}
+
+.--positioning {
+  margin: 0 auto 0;
+}
+
+.container {
+  padding: 0px 15px;
+}
+
+.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+  visibility: hidden;
+}
+
+/* СКРИТІ ЕЛЕМЕНТИ */
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+/* слайдер */
+.slick__box {
+  padding: 50px;
+}
+.slick__box.--1.--style {
+  background-color: rgb(159, 255, 175);
+}
+.slick__box.--2.--style {
+  background-color: rgb(159, 244, 255);
+}
+.slick__box.--3.--style {
+  background-color: rgb(241, 255, 159);
+}
+.slick__box.--4.--style {
+  background-color: rgb(159, 189, 255);
+}
+.slick__box.--5.--style {
+  background-color: rgb(233, 159, 255);
+}
+.slick__box.--6.--style {
+  background-color: rgb(162, 255, 56);
+}
+.slick__box.--7.--style {
+  background-color: rgb(75, 147, 255);
+}
+.slick__box.--8.--style {
+  background-color: rgb(255, 88, 77);
+}
+.slick__box.--9.--style {
+  background-color: rgb(175, 255, 159);
+}
+.slick__box.--10.--style {
+  background-color: rgb(255, 159, 212);
+}/*# sourceMappingURL=index.css.map */
